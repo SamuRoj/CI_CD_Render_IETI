@@ -1,0 +1,3 @@
+com\ieti\cicdRender\controller\GreetingController.class
+com\ieti\cicdRender\CicdRenderApplication.class
+com\ieti\cicdRender\service\GreetingService.class
