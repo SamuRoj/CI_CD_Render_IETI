@@ -1,8 +1,5 @@
 FROM openjdk:17
 
-WORKDIR /usrapp/bin
+COPY target/cicdRender-0.0.1-SNAPSHOT.jar app.jar
 
-COPY /target/classes /usrapp/bin/classes
-COPY /target/dependency /usrapp/bin/dependency
-
-CMD ["java","-cp","./classes:./dependency/*","com.ieti.cicdRender.CicdRenderApplication"]
+ENTRYPOINT ["java", "-jar", "/app.jar"]
